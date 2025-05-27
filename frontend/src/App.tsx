@@ -6,7 +6,7 @@ import { FaPlus, FaArrowRight } from 'react-icons/fa'
 import { RiRobot2Fill } from 'react-icons/ri'
 import './App.css'
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000';
+const API_URL = 'http://ai-shopping-assistant-v2-test.eba-if4f72sg.us-west-2.elasticbeanstalk.com';
 
 function generateSessionId() {
   return Math.random().toString(36).substring(2) + Date.now().toString(36);
