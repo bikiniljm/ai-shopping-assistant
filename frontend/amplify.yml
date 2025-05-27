@@ -3,15 +3,28 @@ frontend:
   phases:
     preBuild:
       commands:
+        - pwd
+        - ls -la
         - npm ci
     build:
       commands:
+        - pwd
         - echo "VITE_API_URL=$VITE_API_URL" >> .env
         - npm run build
+        - ls -la dist
   artifacts:
     baseDirectory: dist
     files:
       - '**/*'
   cache:
     paths:
-      - node_modules/**/* 
+      - node_modules/**/*
+  customHeaders:
+    - pattern: '**/*'
+      headers:
+        - key: 'Cache-Control'
+          value: 'public, max-age=31536000, immutable'
+    - pattern: 'index.html'
+      headers:
+        - key: 'Cache-Control'
+          value: 'public, max-age=0, must-revalidate' 
