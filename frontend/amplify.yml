@@ -3,22 +3,24 @@ frontend:
   phases:
     preBuild:
       commands:
+        - cd frontend
         - pwd
         - ls -la
         - npm ci
     build:
       commands:
+        - cd frontend
         - pwd
         - echo "VITE_API_URL=$VITE_API_URL" >> .env
         - npm run build
         - ls -la dist
   artifacts:
-    baseDirectory: dist
+    baseDirectory: frontend/dist
     files:
       - '**/*'
   cache:
     paths:
-      - node_modules/**/*
+      - frontend/node_modules/**/*
   customHeaders:
     - pattern: '**/*'
       headers:
