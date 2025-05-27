@@ -6,7 +6,10 @@ applications:
         preBuild:
           commands:
             - cd frontend
-            - npm ci
+            - nvm use 18
+            - node -v
+            - npm install -g npm@latest
+            - npm install --legacy-peer-deps
         build:
           commands:
             - echo "VITE_API_URL=$VITE_API_URL" >> .env
