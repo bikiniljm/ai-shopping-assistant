@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-aishoppingassistant-dev-cc6fa-authRole",
+      "UnauthRoleArn": "arn:aws:iam::215496652452:role/amplify-aishoppingassistant-dev-cc6fa-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::215496652452:role/amplify-aishoppingassistant-dev-cc6fa-authRole",
+      "Region": "us-west-2",
+      "DeploymentBucketName": "amplify-aishoppingassistant-dev-cc6fa-deployment",
+      "UnauthRoleName": "amplify-aishoppingassistant-dev-cc6fa-unauthRole",
+      "StackName": "amplify-aishoppingassistant-dev-cc6fa",
+      "StackId": "arn:aws:cloudformation:us-west-2:215496652452:stack/amplify-aishoppingassistant-dev-cc6fa/dd455d40-3aa9-11f0-b003-06bb75a099ef",
+      "AmplifyAppId": "d247fhy4zn27iv"
+    }
+  }
+}

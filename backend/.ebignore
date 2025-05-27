@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+ENV/
+env/
+.env
+.env.local
+
+# Development
+.git
+.gitignore
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Tests
+tests/
+test_*.py
+*_test.py
+
+# Logs
+*.log
+logs/
+
+# Local development settings
+local_settings.py
+
+# Docker
+.docker/
+docker-compose*.yml
+
+# Documentation
+docs/
+*.md
+!README.md
+
+# Temporary files
+*.tmp
+*.temp
+.DS_Store 
